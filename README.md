@@ -2,7 +2,7 @@
 
 Display list of countries and territories by total population all around the world.
 
-## What this project does?
+## What this project is about?
 
 The project is based on the Wikipedia page [List of countries and dependencies by population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population).
 
@@ -17,19 +17,16 @@ With the following features:
 4. Add an option to filter results by a minimum population threshold.
 5. Download the flag image for each country and add a local file path when displaying the results.
 
-
 ## How to run locally?
 
----
-
-## Requirements
+### Requirements
 
 - Python 3.8+
 - `virtualenv` or `venv`
 
 ---
 
-## Installation
+### Installation
 
 1. **Clone the repository**:
 
@@ -53,7 +50,7 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
+### Usage
 
 Run the `main.py` file:
 
