@@ -12,11 +12,10 @@ With the following features:
    - Country name
    - Population
    - Date of data (as listed in the table)
-2. Output the results sorted by population in descending order.
-3. If a country appears more than once, list all occurrences.
-4. Output the results to an HTML file with a table format.
-5. Add an option to filter results by a minimum population threshold.
-6. Download the flag image for each country and add a local file path when displaying the results.
+2. Output the results sorted by population in descending order (if a country appears more than once, list all occurrences)
+3. Output the results to an HTML file with a table format.
+4. Add an option to filter results by a minimum population threshold.
+5. Download the flag image for each country and add a local file path when displaying the results.
 
 
 ## How to run locally?
