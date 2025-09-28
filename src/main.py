@@ -20,8 +20,14 @@ def main(
 ):
     population_table = PopulationTable(WIKIPEDIA_PAGE_URL).get_table()
 
-    # Sort by population
+    # Sort by population.
     population_table.sort(key=lambda row: row.population, reverse=sort_by == "desc")
+
+    # Filter only countries with more than {min_population}.
+    if min_population:
+        population_table = [
+            row for row in population_table if row.population >= min_population
+        ]
 
     for row in population_table:
         print(row)
