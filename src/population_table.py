@@ -15,7 +15,7 @@ class PopulationTableRow(BaseModel):
         lines = [
             f"Country '{self.country_name}'",
             f"Population: {self.population}",
-            f"Date of data: {self.date_of_data.strftime("%Y-%m-%d %H:%M:%S")})",
+            f"Date of data: {self.date_of_data.strftime("%Y-%m-%d")})",
         ]
         return "\t".join(lines)
 

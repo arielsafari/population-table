@@ -3,6 +3,7 @@ from typing import Literal, Optional
 
 import typer
 
+from src.html_table_generator import HTMLTableGenerator
 from src.population_table import PopulationTable
 
 app = typer.Typer()
@@ -28,6 +29,10 @@ def main(
         population_table = [
             row for row in population_table if row.population >= min_population
         ]
+
+    if output_html_file:
+        html_table_generator = HTMLTableGenerator(output_html_file)
+        html_table_generator.generate_table(population_table)
 
     for row in population_table:
         print(row)

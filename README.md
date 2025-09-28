@@ -15,7 +15,6 @@ With the following features:
 2. Output the results sorted by population in descending order (if a country appears more than once, list all occurrences)
 3. Output the results to an HTML file with a table format.
 4. Add an option to filter results by a minimum population threshold.
-5. Download the flag image for each country and add a local file path when displaying the results.
 
 ## How to run locally?
 
@@ -55,5 +54,23 @@ pip install -r requirements.txt
 Run the `main.py` file:
 
 ```bash
-python src/main.py
+python -m src.main
+```
+
+To sort the file, use the flag `--sort-by` (asc|desc):
+
+```bash
+python -m src.main --sort-by asc
+```
+
+To set a minimum limit of population, use the flag `--min-population`:
+
+```bash
+python -m src.main --min-population 500
+```
+
+To output the table into a HTML file, use the flag `--output-html-file`:
+
+```bash
+python -m src.main --output-html-file "population_data.html"
 ```
