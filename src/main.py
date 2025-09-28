@@ -30,6 +30,7 @@ def main(
             row for row in population_table if row.population >= min_population
         ]
 
+    # Output the table into an HTML file.
     if output_html_file:
         html_table_generator = HTMLTableGenerator(output_html_file)
         html_table_generator.generate_table(population_table)
