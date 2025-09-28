@@ -11,6 +11,17 @@ class PopulationTableRow(BaseModel):
     population: int
     date_of_data: datetime
 
+    def __str__(self):
+        lines = [
+            f"Country '{self.country_name}'",
+            f"Population: {self.population}",
+            f"Date of data: {self.date_of_data.strftime("%Y-%m-%d %H:%M:%S")})",
+        ]
+        return "\t".join(lines)
+
+    def __repr__(self):
+        return self.__str__()
+
 
 class PopulationTable:
     def __init__(
